@@ -1,0 +1,18 @@
+1. Middleware functions have access to the request object (req), the response object (res), and the next() function.
+We can create our custom middleware or use Express built-in middleware and middleware from 3rd party packages.
+Middleware can
+- Make changes to request and response objects
+- Excecute functions or any codes
+- End response cycle
+- Call next() middleware in the stack
+To use middleware, we apply: app.use().
+
+2. CRUD stands for
+- Create
+- Read
+- Update 
+- Delete
+
+3.1. We use dotenv and mongoose packages in order to access the information in the .env file.
+
+3.2. To protect the contents of the .env file, we should make sure that the .gitignore file includes .env.
