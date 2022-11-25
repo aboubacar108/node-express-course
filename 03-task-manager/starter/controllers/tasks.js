@@ -3,11 +3,19 @@ const Task = require('../models/tasks')
 const asyncWrapper = require('../middleware/async')
 const { createCustomError } = require('../errors/custom-error')
 
+week6
 const getAllTasks = asyncWrapper(async (req, res, next) => {
   const tasks = await Task.find({})
   res.status(200).json({ tasks })
 })
 const createTask = asyncWrapper(async (req, res, next) => {
+
+
+const getAllTasks = (req, res) => {
+  res.send('get all tasks')
+}
+const createTask = async (req, res) => {
+main
   const task = await Task.create(req.body)
   res.status(201).json({ task })
 })
